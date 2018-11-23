@@ -1,0 +1,559 @@
+/*底部箭头*/
+.san{
+    animation: san 1s linear infinite;
+}
+@keyframes san {
+    0%{opacity: 0;transform:translateY(0rem);}
+    100%{ opacity: 1;transform:translateY(-0.15rem);}
+}
+/*音乐*/
+.yilei{
+    animation: yinyue 1s linear infinite;
+}
+@keyframes yinyue {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.page1{
+    background: url("../images/bg.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.page1 .tou1{
+    width: 4.4rem;
+    height: 6.3rem;
+    z-index: 11;
+}
+.page1 .tou2{
+    width: 3.55rem;
+    height:1rem ;
+    position: absolute;
+    top: -0.4rem;
+    left: 0rem;
+    z-index: 33;
+}
+.page1 .tou3{
+    width: 3.55rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 33;
+}
+.page1 .tou4{
+    width: 1.8rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+    z-index: 33;
+    left: 20%;
+}
+.page1 .tou5{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1.3rem;
+    z-index: 33;
+    left: 20%;
+}
+.page1 .tou6{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 1.8rem;
+    z-index: 35;
+    left: 34%;
+ }
+.page1 .tou7{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 3.4rem;
+    z-index: 35;
+    left: 22%
+
+}
+.page1 .tou7 p{
+    text-align: center;
+    margin-top: 0.15rem;
+    font-size: 0.16rem;
+    color: white;
+
+}
+/*第二屏*/
+.page2{
+    background: url("../images/bg.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.page2 .tou1{
+    width: 4.4rem;
+    height: 6.3rem;
+    z-index: 11;
+}
+.page2 .tou2{
+    width: 3.55rem;
+    height:1rem ;
+    position: absolute;
+    top: -0.4rem;
+    left: 0rem;
+    z-index: 33;
+}
+.page2 .tou3{
+    width: 3.55rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 33;
+}
+.page2 .main{
+    position: absolute;
+    top: 0.2rem;
+    background: url(../images/kuang.png) no-repeat;
+    background-size: 100% 100%;
+    width: 3.5rem;
+    height: 4.5rem;
+    opacity: 0.5;
+}
+.page2 .main_1{
+    position: absolute;
+    left: 17%;
+    top: 0.6rem;
+    width: 2.4rem;
+    height: 0.6rem;
+}
+.page2 span{
+    display: inline-block;
+    position: absolute;
+    top: 0.8rem;
+    left: 10%;
+    text-align: center;
+    width: 2.8rem;
+    height: 0.6rem;
+    color: black;
+    font-weight: bold;
+    font-size: 0.2rem;
+}
+.page2 .out{
+    position: absolute;
+    top: 1.25rem;
+    left: 10%;
+    text-align: center;
+    width: 2.8rem;
+    height: 0.6rem;
+    color: black;
+    font-size: 0.16rem;
+}
+.page2 .guan{
+    width: 2rem;
+    height: 1.3rem;
+    position: absolute;
+    top: 1.6rem;
+    left: 20%;
+}
+.page2 .di{
+    width: 2.2rem;
+    position: absolute;
+    top: 3.1rem;
+    left: 18%;
+    color: #48454B;
+    font-size: 0.14rem;
+    z-index: 999;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+/*第三屏*/
+.page3{
+    background: url("../images/bg.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.page3 .tou1{
+    width: 4.4rem;
+    height: 6.3rem;
+    z-index: 11;
+}
+.page3 .tou2{
+    width: 3.55rem;
+    height:1rem ;
+    position: absolute;
+    top: -0.4rem;
+    left: 0rem;
+    z-index: 33;
+}
+.page3 .tou3{
+    width: 3.55rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 33;
+}
+.page3 .main{
+    position: absolute;
+    top: 0.2rem;
+    background: url(../images/kuang.png) no-repeat;
+    background-size: 100% 100%;
+    width: 3.5rem;
+    height: 4.5rem;
+    opacity: 0.5;
+}
+.page3 .main_1{
+    position: absolute;
+    left: 17%;
+    top: 0.6rem;
+    width: 2.4rem;
+    height: 0.6rem;
+}
+.page3 span{
+    display: inline-block;
+    position: absolute;
+    top: 0.8rem;
+    left: 10%;
+    text-align: center;
+    width: 2.8rem;
+    height: 0.6rem;
+    color: black;
+    font-weight: bold;
+    font-size: 0.2rem;
+}
+.page3 .out{
+    position: absolute;
+    top: 1.2rem;
+    left: 10%;
+    text-align: center;
+    width: 2.8rem;
+    height: 0.6rem;
+    color: black;
+    font-size: 0.16rem;
+}
+.page3 .out2{
+    position: absolute;
+    top: 1.6rem;
+    left: 10%;
+    text-align: center;
+    color: black;
+    font-size: 0.16rem;
+    width: 2.8rem;
+    height: 0.3rem;
+}
+.page3 .out3{
+    position: absolute;
+    top: 1.9rem;
+    left: 10%;
+    text-align: center;
+    color: black;
+    font-size: 0.16rem;
+    width: 2.8rem;
+    height: 0.3rem;
+}
+.page3 .img1{
+    width: 2.82rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 2.2rem;
+    left: 10%;
+}
+.page3 .img2{
+    width: 1.2rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 3.6rem;
+    left: 10%;
+}
+.page3 .img3{
+    position: absolute;
+    right: 10%;
+    width: 1.2rem;
+    height: 0.8rem;
+    top: 3.6rem;
+}
+/*第四屏*/
+.page4{
+    background: url("../images/bg.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.page4 .tou1{
+    width: 4.4rem;
+    height: 6.3rem;
+    z-index: 11;
+}
+.page4 .tou2{
+    width: 3.55rem;
+    height:1rem ;
+    position: absolute;
+    top: -0.4rem;
+    left: 0rem;
+    z-index: 33;
+}
+.page4 .tou3{
+    width: 3.55rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 33;
+}
+.page4 .main{
+    position: absolute;
+    top: 0.2rem;
+    background: url(../images/kuang.png) no-repeat;
+    background-size: 100% 100%;
+    width: 3.5rem;
+    height: 4.5rem;
+    opacity: 0.5;
+}
+.page4 .main_1{
+    position: absolute;
+    left: 10%;
+    top: 0.6rem;
+    width: 3rem;
+    height: 0.6rem;
+}
+.page4 span{
+    display: inline-block;
+    position: absolute;
+    top: 0.8rem;
+    left: 10%;
+    text-align: center;
+    width: 2.8rem;
+    height: 0.6rem;
+    color: black;
+    font-weight: bold;
+    font-size: 0.2rem;
+}
+.page4 .out{
+    position: absolute;
+    top: 1.2rem;
+    left: 10%;
+    text-align: center;
+    width: 2.8rem;
+    height: 0.6rem;
+    color: black;
+    font-size: 0.16rem;
+}
+.page4 .da{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.page4  .ce1{
+    position: absolute;
+    top: 1.6rem;
+    left: 10%;
+    text-align: center;
+    width: 0.4rem;
+    height: 0.4rem;
+    z-index: 85;
+ }
+.page4  .te1{
+    position: absolute;
+    top: 1.59rem;
+    left: 9.5%;
+    text-align: center;
+    display: inline-block;
+    background: mediumslateblue;
+    color: black;
+    border-radius: 50%;
+    line-height: 0.45rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    z-index: 84;
+}
+.page4 .edd1{
+    position: absolute;
+    top: 1.7rem;
+    left: 30%;
+    font-size: 0.16rem;
+}
+.page4 .ce2{
+    position: absolute;
+    top: 2.3rem;
+    left: 10%;
+    text-align: center;
+    width: 0.4rem;
+    height: 0.4rem;
+    z-index: 85;
+}
+.page4 .te2{
+    position: absolute;
+    top: 2.28rem;
+    left: 9.5%;
+    text-align: center;
+    display: inline-block;
+    background: mediumslateblue;
+    color: black;
+    border-radius: 50%;
+    line-height: 0.45rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    z-index: 84;
+}
+.page4 .edd2{
+    position: absolute;
+    top: 2.4rem;
+    left: 30%;
+    font-size: 0.16rem;
+}
+.page4 .ce3{
+    position: absolute;
+    top: 2.98rem;
+    left: 10%;
+    text-align: center;
+    width: 0.4rem;
+    height: 0.4rem;
+    z-index: 85;
+}
+.page4 .te3{
+    position: absolute;
+    top: 2.95rem;
+    left: 9.5%;
+    text-align: center;
+    display: inline-block;
+    background: mediumslateblue;
+    color: black;
+    border-radius: 50%;
+    line-height: 0.45rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    z-index: 84;
+}
+.page4 .edd3{
+    position: absolute;
+    top: 3.1rem;
+    left: 30%;
+    font-size: 0.16rem;
+}
+.page4 .ce4{
+    position: absolute;
+    top: 3.64rem;
+    left: 10%;
+    text-align: center;
+    width: 0.4rem;
+    height: 0.4rem;
+    z-index: 85;
+}
+.page4 .te4{
+    position: absolute;
+    top: 3.62rem;
+    left: 9.5%;
+    text-align: center;
+    display: inline-block;
+    background: mediumslateblue;
+    color: black;
+    border-radius: 50%;
+    line-height: 0.45rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    z-index: 84;
+}
+.page4 .edd4{
+    position: absolute;
+    top: 3.75rem;
+    left: 30%;
+    font-size: 0.16rem;
+}
+/*圆圈*/
+.cece{
+    animation: yinyue 1s linear infinite;
+}
+@keyframes cece {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+/*第六平*/
+
+.page6{
+    background: url("../images/bg.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.page6 .lianxi{
+    text-align: center;
+    width: 1rem;
+    font-size: 0.22rem;
+    color: #C4AF5C;
+    margin: 0.7rem auto 0.6rem auto;
+}
+.page6 .ttt{
+    width: 2.54rem;
+    height: 0.27rem;
+    position: absolute;
+    top: 1.15rem;
+    left: 0.5rem;
+}
+.page6 .xxx{
+    width: 2.54rem;
+    height: 0.27rem;
+    position: absolute;
+    top: 5rem;
+    left: 0.5rem;
+}
+.page6 .er{
+    width: 1.3rem;
+    height: 1.7rem;
+    margin: 0 auto;
+    font-size: 0;
+}
+.page6 .er img{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.page6 .er p{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.18rem;
+    color: white;
+    text-align: center;
+}
+.page6 .p1{
+    color: white;
+    font-size: 0.2rem;
+    text-align: center;
+    margin-top: 0.2rem;
+
+}
+.page6 .p2{
+    color: white;
+    font-size: 0.2rem;
+    text-align: center;
+    margin-top: 0.2rem;
+
+}
+.page6 .p3{
+    color: white;
+    font-size: 0.2rem;
+    text-align: center;
+    margin-top: 0.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

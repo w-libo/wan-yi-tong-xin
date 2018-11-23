@@ -1,0 +1,51 @@
+/*页面初始化*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+/*页面初始化*/
+
+/*背景音乐*/
+.yinyue{
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url("../images/bgmBtn-fbd2dc.svg");
+    background-size: 0.44rem 0.44rem;
+    position: fixed;
+    top:0.2rem;
+    right: 0.2rem;
+    z-index: 999;
+}
+
+/*背景音乐*/
+.ggg{
+    width: 0.5rem;
+    height: 0.28rem;
+    background: url("../images/icon_up.png");
+    background-size: 0.5rem 0.28rem;
+    font-size: 0;
+    position:fixed;
+    top: 5.8rem;
+    left: 1.53rem;
+    z-index: 999;
+    transition: all 0.5s linear;
+
+}
+/*.deng{*/
+    /*animation: deng 0.5s linear infinite;*/
+/*}*/
+/*@keyframes deng {*/
+    /*0%{opacity: 0}*/
+    /*100%{opacity: 1}*/
+/*}*/
+

@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, .swiper-container, .swiper-slide {
+    height:100%;
+    width: 100%;
+    background: #011b2c url("../images/wanyi2.gif") no-repeat;
+    background-position: center;
+}
+
+
+/*下滑箭头样式*/
+.u-arrow {
+    position: fixed;
+    bottom: 0;
+    left:50%;
+    z-index: 150;
+    width: 80px;
+    height: 80px;
+    margin-left: -39px;
+    /*background: rgba(160,160,160,0.6); border-radius: 50%;*/
+}
+.u-arrow p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8.5px 0 0 -8.5px;
+    width: 17px;
+    height: 17px;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+    -moz-animation: start 1.5s infinite ease-in-out;
+    animation: start 1.5s infinite ease-in-out;
+}
+.css_sprite01 {
+    background-image: url(../images/wanyi1.png)!important;
+    background-repeat: no-repeat!important;
+    background-size: 100%;
+}
+@-webkit-keyframes start {
+    0%, 30% {
+        opacity: 0;
+        -webkit-transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0, 8px);
+    }
+}
+@-moz-keyframes start {
+    0%, 30% {
+        opacity: 0;
+        -moz-transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        -moz-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translate(0, 8px);
+    }
+}
+@keyframes start {
+    0%, 30% {
+        opacity: 0;
+        transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 8px);
+    }
+}
+
+/*音乐*/
+.yilei {
+    animation: yinyue 1s linear infinite;
+}
+.yinyue {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url(../images/wanyi4.png);
+    background-size: 100%;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+}
+@keyframes yinyue {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
+/*点缀背景*/
+.inside_bg_top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    animation: fadeInLeft 1.5s ease 0s  normal both running;
+}
+.inside_bg_top img{
+    width: 100%;
+}
+.inside_bg_bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    animation: fadeInLeft 1.5s ease 0s  normal both running;
+}
+.inside_bg_bottom img{
+    width: 100%;
+}
+
+
+.wany_dz_q_topr{
+    position: absolute;
+    right: -20%;
+    top: 4%;
+    width: 50%;
+    z-index: -2;
+}
+.wany_dz_q_topr img{
+    width: 100%;
+}
+.wany_dz_q_bopl{
+    position: absolute;
+    left: -20%;
+    bottom: 4%;
+    width: 50%;
+    z-index: -2;
+}
+.wany_dz_q_bopl img{
+    width: 100%;
+}
+
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.an{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+
+}
+
+
+/*公司logo*/
+.wanyi_logo{
+    width: 12rem;
+    position: relative;
+    z-index: 3;
+    margin: 8rem auto 0 auto;
+    animation: fadeIn 2s ease 1s 1 normal both running;
+}
+.wanyi_logo img{
+    width: 100%;
+}
+
+
+.wanyi_titme{
+    font-size: 4.5rem;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    margin-top: 0.6rem;
+    animation: fadeIn 2s ease 2s 1 normal both running;
+    font-family: "Microsoft YaHei";
+}
+.wanyi_title{
+    background: #026879;
+    width: 80%;
+    margin: 0 auto 0.6rem auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.3rem 0;
+    animation: fadeInLeft 1s ease 3s 1 normal both running;
+}
+.wanyi_title_ms{
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    animation: fadeIn 2s ease 4s 1 normal both running;
+}
+.wanyi_business{
+    width: 60%;
+    margin: 15px auto 10px auto;
+    position: relative;
+    z-index: 5;
+    animation: fadeIn 2s ease 5s 1 normal both running;
+}
+.wanyi_business li{
+    color: #fff;
+    width: 47%;
+    margin-bottom: 0.5rem;
+    margin-left: 2%;
+    list-style:none;
+}
+.wanyi_business li:nth-child(1){
+    text-align: left;
+    float: left;
+}
+.wanyi_business li:nth-child(3){
+    text-align: left;
+    float: left;
+}
+.wanyi_business li:nth-child(2){
+    text-align: right;
+    float: right;
+}
+.wanyi_business li:nth-child(4){
+    text-align: right;
+    float: right;
+}
+.wanyi_business li i{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 100%;
+    background: #fff;
+    vertical-align: middle;
+    margin: -0.2rem 0.3rem 0 0;
+}
+
+
+/*公司介绍*/
+
+.Company_introduction{
+    width: 80%;
+    height: auto;
+    margin: 12% auto 0 auto;
+    background: url(../images/wanyi9.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
+}
+.Company_title{
+    font-size: 1.2rem;
+    color: #fff;
+    width: 40%;
+    background: #026879;
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+.Company_cont{
+    margin-top: 1rem;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+}
+.Company_cont p{
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    text-indent: 28px;
+    margin-bottom: 1rem;
+}
+.Company_img{
+    width: 80%;
+    height: 9rem;
+    background-size: 100%;
+    overflow: hidden;
+    padding: 1%;
+    border: 2px solid #5fe0f6;
+    margin: 0 auto 1rem auto;
+}
+.Company_img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Company_al{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 1.5rem;
+}
+.Company_al h5{
+    color: #fff;
+    text-align: center;
+    margin: 0.4rem auto;
+}
+.Company_al img{
+    width: 100%;
+}
+.fot_txt{
+    width: 80%;
+    margin: 0.8rem auto 0 auto;
+    color: #fff;
+}
+.fot_txt h5{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.fot_txt p{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+.Company_img_top{
+    margin-top: 1rem
+}
+.Company_address{
+    width: 92%;
+    margin: 1.3rem auto 0 auto;
+    line-height: 1.5rem;
+}
+
+.Company_address h4{
+    color: #0fb6ce;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.Company_address p{
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+}
+
+.Company_img_contact {
+    margin-top: 1rem;
+}
+.Company_contact {
+    width: 50%;
+    height: 10.29rem;
+    background-size: 100%;
+    overflow: hidden;
+    padding: 1%;
+    border: 2px solid #5fe0f6;
+    margin: 1rem auto 0 auto;
+}
+.Company_contact img{
+    width: 100%;
+}
+
+.Company_title_left{
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background: #fff;
+    vertical-align: middle;
+    margin: -2px 4px 0 0;
+
+}
+
+.Company_title_right{
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background: #fff;
+    vertical-align: middle;
+    margin: -2px  0 0 4px;
+
+}
+
+@media screen and (max-width: 320px) {
+    .wanyi_logo {
+        margin: 5rem auto 0 auto;
+    }
+    .Company_cont p {
+        max-height: 20rem;
+        overflow: hidden;
+    }
+    .Company_cont {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    .Company_img {
+        height: 7rem;
+    }
+    .Company_al {
+        margin-top: 1rem;
+    }
+}
+
+
+
+

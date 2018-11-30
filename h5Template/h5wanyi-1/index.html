@@ -261,45 +261,45 @@
     });
 
     //微信分享自定义
- 3         document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
- 4         window.shareData = {
- 5                 "timeLineLink": "http://wangtianlu.com/wan-yi-tong-xin/h5Template/h5wanyi-1/", //分享到朋友圈的链接
- 6                 "sendFriendLink": "http://wangtianlu.com/wan-yi-tong-xin/h5Template/h5wanyi-1/",//分享给朋友的链接
- 7                 "weiboLink": "http://wangtianlu.com/wan-yi-tong-xin/h5Template/h5wanyi-1/",//分享到微博的
- 8                 "tTitle": "广东南粤e+直销银行,简化金融服务为您智能理财，让您的生活更轻松！",//朋友圈标题
- 9                 "tContent": "简化金融服务为您智能理财，让您的生活更轻松！",//朋友圈摘要内容
-10                 "fTitle": "广东南粤e+直销银行",//朋友标题
-11                 "fContent": "简化金融服务为您智能理财，让您的生活更轻松！", //朋友摘要内容
-12                 "wContent": "简化金融服务为您智能理财，让您的生活更轻松！"  //微博
-13             };
-14             // 发送给好友
-15             WeixinJSBridge.on('menu:share:appmessage', function (argv) {
-16                 WeixinJSBridge.invoke('sendAppMessage', {
-17                     "img_url": "xxxxxx/img/share.jpg",//分享链接图标的 url
-18                     "img_width": "80",
-19                     "img_height": "80",
-20                     "link": window.shareData.sendFriendLink,
-21                     "desc": window.shareData.fContent,
-22                     "title": window.shareData.fTitle
-23                 }, function (res) {
-24                     _report('send_msg', res.err_msg);
-25                 })
-26             });
-27             // 分享到朋友圈
-28             WeixinJSBridge.on('menu:share:timeline', function (argv) {
-29                 WeixinJSBridge.invoke('shareTimeline', {
-30                     "img_url": "xxxxxx/img/share.jpg",
-31                     "img_width": "80",
-32                     "img_height": "80",
-33                     "link": window.shareData.timeLineLink,
-34                     "desc": window.shareData.tContent,
-35                     "title": window.shareData.tTitle
-36                 }, function (res) {
-37                     _report('timeline', res.err_msg);
-38                 });
-39             });
-40 
-41         }, false)
+          document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+          window.shareData = {
+                  "timeLineLink": "http://wangtianlu.com/wan-yi-tong-xin/h5Template/h5wanyi-1/", //分享到朋友圈的链接
+                 "sendFriendLink": "http://wangtianlu.com/wan-yi-tong-xin/h5Template/h5wanyi-1/",//分享给朋友的链接
+                  "weiboLink": "http://wangtianlu.com/wan-yi-tong-xin/h5Template/h5wanyi-1/",//分享到微博的
+                  "tTitle": "广东南粤e+直销银行,简化金融服务为您智能理财，让您的生活更轻松！",//朋友圈标题
+                  "tContent": "简化金融服务为您智能理财，让您的生活更轻松！",//朋友圈摘要内容
+                 "fTitle": "广东南粤e+直销银行",//朋友标题
+                 "fContent": "简化金融服务为您智能理财，让您的生活更轻松！", //朋友摘要内容
+                 "wContent": "简化金融服务为您智能理财，让您的生活更轻松！"  //微博
+             };
+             // 发送给好友
+             WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+                 WeixinJSBridge.invoke('sendAppMessage', {
+                     "img_url": "xxxxxx/img/share.jpg",//分享链接图标的 url
+                     "img_width": "80",
+                     "img_height": "80",
+                     "link": window.shareData.sendFriendLink,
+                     "desc": window.shareData.fContent,
+                     "title": window.shareData.fTitle
+                 }, function (res) {
+                     _report('send_msg', res.err_msg);
+                 })
+             });
+             // 分享到朋友圈
+             WeixinJSBridge.on('menu:share:timeline', function (argv) {
+                 WeixinJSBridge.invoke('shareTimeline', {
+                     "img_url": "xxxxxx/img/share.jpg",
+                     "img_width": "80",
+                     "img_height": "80",
+                     "link": window.shareData.timeLineLink,
+                     "desc": window.shareData.tContent,
+                     "title": window.shareData.tTitle
+                 }, function (res) {
+                     _report('timeline', res.err_msg);
+                 });
+             });
+ 
+         }, false)
 </script>
 </body>
 </html>

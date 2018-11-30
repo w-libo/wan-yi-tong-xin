@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/wany.css"><!--本页面样式-->
     <link rel="stylesheet" href="css/animate.min.css"><!--css3动画样式-->
     <script src="js/zepto.js"></script><!--zepto插件-->
-    <script src="js/jweixin-1.0.0.js"></script><!--添加微信API支持微信（iOS系统）浏览页面音频自动播放-->
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js "></script><!--添加微信API支持微信（iOS系统）浏览页面音频自动播放-->
     <script src="js/swiper.min.js"></script><!--swiper插件-->
     <script src="js/swiper.animate1.0.2.min.js"></script><!--swiper插件-->
 
@@ -260,24 +260,19 @@
 
     });
 
-    window.share_config = {
-     "share": {
-        "imgUrl": "http://www.yourwebsite.com/share.png",//分享图，默认当相对路径处理，所以使用绝对路径的的话，“http://”协议前缀必须在。
-        "desc" : "你对页面的描述",//摘要,如果分享到朋友圈的话，不显示摘要。
-        "title" : '分享卡片的标题',//分享卡片标题
-        "link": window.location.href,//分享出去后的链接，这里可以将链接设置为另一个页面。
-        "success":function(){//分享成功后的回调函数
-        },
-        'cancel': function () { 
-            // 用户取消分享后执行的回调函数
-        }
-    }
-};  
-    wx.ready(function () {
-    wx.onMenuShareAppMessage(share_config.share);//分享给好友
-    wx.onMenuShareTimeline(share_config.share);//分享到朋友圈
-    wx.onMenuShareQQ(share_config.share);//分享给手机QQ
-});
+    wx.hideMenuItems({ menuList: ['menuItem:share:QZone',                'menuItem:share:appMessage',
+
+                     'menuItem:share:qq',
+
+                     'menuItem:favorite',
+
+                     'menuItem:setFont',
+
+                     'menuItem:copyUrl'
+
+                     ]
+
+      });
 </script>
 </body>
 </html>

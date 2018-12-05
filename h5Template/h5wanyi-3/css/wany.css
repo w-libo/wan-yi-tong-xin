@@ -15,7 +15,7 @@ html, body, .swiper-container, .swiper-slide {
     background: #00000069;
     top: 50%;
     padding: 31px 0;
-    margin-top: -38%;
+    margin-top: -40%;
 }
 /*下滑箭头样式*/
 .u-arrow {
@@ -392,8 +392,10 @@ html, body, .swiper-container, .swiper-slide {
    vertical-align: middle;
 }
 .order .txt {
-   color: #118dbe;
-   vertical-align: middle;
+       color: #118dbe;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .hd-cont-txt{
@@ -742,7 +744,7 @@ html, body, .swiper-container, .swiper-slide {
 .Company_cont p {font-size: 0.8rem;}
 .Company-title {margin-bottom: 16px;}
 .Company_introduction .content-txt {margin-bottom: 8px;line-height: 1.2rem;}
-.dl-cont dl dt {height: 6rem;width: 76%;}
+.dl-cont dl dt {height: 6.5rem;width: 76%;}
 .s-ing {display: block;width: 93%;margin: 0px auto 0 4%;height: 12rem;}
 }
 

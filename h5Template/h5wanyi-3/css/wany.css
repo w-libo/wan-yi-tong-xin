@@ -1,0 +1,734 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, .swiper-container, .swiper-slide {
+    height:100%;
+    width: 100%;
+    background: #011b2c url("../images/wanyi2.gif") no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.contBox{
+    position: relative;
+    background: #00000069;
+    top: 50%;
+    padding: 31px 0;
+    margin-top: -35%;
+}
+/*下滑箭头样式*/
+.u-arrow {
+    position: fixed;
+    bottom: 0;
+    left:50%;
+    z-index: 150;
+    width: 80px;
+    height: 80px;
+    margin-left: -39px;
+    /*background: rgba(160,160,160,0.6); border-radius: 50%;*/
+}
+.u-arrow p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8.5px 0 0 -8.5px;
+    width: 17px;
+    height: 17px;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+    -moz-animation: start 1.5s infinite ease-in-out;
+    animation: start 1.5s infinite ease-in-out;
+}
+.css_sprite01 {
+    background-image: url(../images/wanyi1.png)!important;
+    background-repeat: no-repeat!important;
+    background-size: 100%;
+}
+@-webkit-keyframes start {
+    0%, 30% {
+        opacity: 0;
+        -webkit-transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0, 8px);
+    }
+}
+@-moz-keyframes start {
+    0%, 30% {
+        opacity: 0;
+        -moz-transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        -moz-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translate(0, 8px);
+    }
+}
+@keyframes start {
+    0%, 30% {
+        opacity: 0;
+        transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 8px);
+    }
+}
+
+/*音乐*/
+.yilei {
+    animation: yinyue 1s linear infinite;
+}
+.yinyue {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url(../images/wanyi4.png);
+    background-size: 100%;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+}
+@keyframes yinyue {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
+/*点缀背景*/
+.inside_bg_top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    animation: fadeInLeft 1.5s ease 0s  normal both running;
+}
+.inside_bg_top img{
+    width: 100%;
+}
+.inside_bg_bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    animation: fadeInLeft 1.5s ease 0s  normal both running;
+}
+.inside_bg_bottom img{
+    width: 100%;
+}
+
+
+.wany_dz_q_topr{
+    position: absolute;
+    right: -20%;
+    top: 4%;
+    width: 50%;
+    z-index: -2;
+}
+.wany_dz_q_topr img{
+    width: 100%;
+}
+.wany_dz_q_bopl{
+    position: absolute;
+    left: -20%;
+    bottom: 4%;
+    width: 50%;
+    z-index: -2;
+}
+.wany_dz_q_bopl img{
+    width: 100%;
+}
+
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.an{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+
+}
+
+.top-bod{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top-bod img{
+    width: 100%;
+}
+.bottom-bod{
+    width: 90%;
+    margin: 0 auto;
+}
+.bottom-bod img{
+    width: 100%;
+}
+
+/*公司logo*/
+.wanyi_logo{
+    width: 5rem;
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+    animation: fadeIn 2s ease 1s 1 normal both running;
+}
+.wanyi_logo img{
+    width: 100%;
+}
+
+
+.wanyi_titme{
+    font-size: 4.5rem;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    margin-top: 0.6rem;
+    animation: fadeIn 2s ease 2s 1 normal both running;
+    font-family: "Microsoft YaHei";
+}
+.wanyi_title{
+    width: 80%;
+    margin: 0 auto 0.6rem auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.3rem 0;
+    animation: fadeInLeft 1s ease 3s 1 normal both running;
+}
+.wanyi_title_ms{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    animation: fadeIn 2s ease 4s 1 normal both running;
+}
+.wanyi_business{
+    width: 60%;
+    margin: 15px auto 10px auto;
+    position: relative;
+    z-index: 5;
+    animation: fadeIn 2s ease 5s 1 normal both running;
+}
+.wanyi_business li{
+    color: #fff;
+    width: 47%;
+    margin-bottom: 0.5rem;
+    margin-left: 2%;
+    list-style:none;
+}
+.wanyi_business li:nth-child(1){
+    text-align: left;
+    float: left;
+}
+.wanyi_business li:nth-child(3){
+    text-align: left;
+    float: left;
+}
+.wanyi_business li:nth-child(2){
+    text-align: right;
+    float: right;
+}
+.wanyi_business li:nth-child(4){
+    text-align: right;
+    float: right;
+}
+.wanyi_business li i{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 100%;
+    background: #fff;
+    vertical-align: middle;
+    margin: -0.2rem 0.3rem 0 0;
+}
+
+.bot-slide{
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.bot-slide b{
+    color: #f06a08;
+    font-size: 1rem;
+}
+.bot-slide span{
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+/*公司介绍*/
+
+.Company_introduction{
+    width: 85%;
+    height: auto;
+    margin: 12% auto 0 auto;
+    background: url(../images/wanyi8.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
+    color: #fff;
+    height: 78%;
+}
+.Company-title{
+    background: #4186b2;
+    width: 6rem;
+    margin-top: -1.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.scont_title{
+    font-size: 1.2rem;
+    color: #fff;
+    width: 60%;
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin: 50px auto 20px auto;
+    background: #118dbe;
+}
+.sais-txt{
+    font-size: 0.9rem;
+    padding: 0 24px;
+    text-indent: 24px;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+}
+.sais-txt-top{
+    margin-top: 1rem;
+}
+.Company_introduction .content-txt{
+    font-size: 0.9rem;
+    padding: 0 24px;
+    text-indent: 24px;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+}
+.content-txt-top{
+    margin-top:1rem;
+}
+.Company_introduction .content-txt b{
+    color: #f17609;
+}
+.cont-p{
+    display: inline-block;
+    width: 90%;
+    margin-left: 5.2%;
+    margin-top: 0.5rem;
+}
+.cont-p li{
+    display: inline-block;
+    list-style: none;
+    width: 49%;
+    height: 5rem;
+    background: #fff;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    line-height: 3.5rem;
+}
+.cont-p li img{
+    width: 65%;
+}
+.Company_title{
+    font-size: 1.1rem;
+    color: #fff;
+    width: 87%;
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin: 50px auto 20px auto;
+    background: #118dbe;
+}
+
+.cont_title{
+    font-size: 1.2rem;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin: 18px auto 20px auto;
+    background: #118dbe;
+}
+ .order {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+ .order .line {
+   display: inline-block;
+   width: 14%;
+   border-top: 1px solid #118dbe ;
+   vertical-align: middle;
+}
+.order .txt {
+   color: #118dbe;
+   vertical-align: middle;
+}
+
+.hd-cont-txt{
+        font-size: 0.9rem;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    line-height: 1.2rem;
+}
+.hd-cont-txt h4{
+    margin: 4px 0;
+}
+.hd-cont-txt p{
+    font-size: 0.8rem;
+}
+
+.fot-txt{
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.fot-txt input{
+    width: 60%;
+    border: 1px solid #118dbe;
+    cursor: pointer;
+    height: 30px;
+    text-indent: 10px;
+    margin-left: 20%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+}
+.title{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 4rem;
+}
+.btn{
+    background: #118dbe;
+    color: #fff;
+    font-size: 0.9rem
+}
+.tel{
+    display: block;
+    width: 33%;
+    margin: 5rem auto;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    background: #2c94be;
+    padding: 0.3rem 0;
+    border-radius: 16px;
+}
+.dl-cont{
+    display: inline-block;
+}
+.dl-cont dl{
+    vertical-align: middle;
+    display: inline-block;
+    width: 42%;
+    margin-left: 5%;
+}
+.sy-title{
+    color: #118dbe;
+    width: 52%;
+    text-align: center;
+    margin: 10px auto;
+}
+.dl-cont dl dt{
+    display: block;
+    height: 7rem;
+    width: 78%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+.dl-cont dl dd{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.dl-cont dl dt img{
+    width: 100%;
+}
+.lis-txt{
+    max-width: 65%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1rem;
+}
+.p-txt{
+    max-width: 82%;
+    text-align: center;
+    margin: 17px auto;
+    font-size: 0.8rem;
+}
+.sh-table{
+    border: 1px solid #118dbe;
+    width: 90%;
+    margin: 10px auto 10px auto;
+    border-collapse:collapse;
+    text-align: center;
+}
+.sh-table tr{
+    height: 1.5rem;
+}
+.sh-table tr th{
+    border: 1px solid #118dbe;
+    font-size: 0.7rem;
+}
+.sh-table tr td{
+    border: 1px solid #118dbe;
+    font-size: 0.7rem;
+}
+.Company_cont{
+    margin-top: 2rem;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+}
+.Company_cont p{
+    text-indent: 28px;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #118dbe;
+    text-align: center;
+}
+.Company_cont h4 {
+    font-size: 1.4rem;
+    text-indent: 28px;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+.Company_img{
+    width: 80%;
+    height: 9rem;
+    background-size: 100%;
+    overflow: hidden;
+    padding: 1%;
+    border: 2px solid #5fe0f6;
+    margin: 0 auto 1rem auto;
+}
+.Company_img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Company_al{
+    display: inline-block;
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 1.5rem;
+}
+.Company_al h5{
+    color: #fff;
+    text-align: center;
+    margin: 0.4rem auto;
+}
+.Company_al img{
+    width: 100%;
+}
+.fot_txt{
+    width: 80%;
+    margin: 0.8rem auto 0 auto;
+    color: #fff;
+}
+.fot_txt h5{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.fot_txt p{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+.Company_img_top{
+    margin-top: 1rem
+}
+.Company_address{
+    width: 92%;
+    margin: 1.3rem auto 0 auto;
+    line-height: 1.5rem;
+}
+
+.Company_address h4{
+    color: #0fb6ce;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.Company_address p{
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+}
+
+.Company_img_contact {
+    margin-top: 1rem;
+}
+.Company_contact {
+    width: 50%;
+    height: 10.29rem;
+    background-size: 100%;
+    overflow: hidden;
+    padding: 1%;
+    border: 2px solid #5fe0f6;
+    margin: 1rem auto 0 auto;
+}
+.Company_contact img{
+    width: 100%;
+}
+
+.Company_title_left{
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background: #fff;
+    vertical-align: middle;
+    margin: -2px 4px 0 0;
+
+}
+
+.dt-img{
+    display: block;
+    width: 70%;
+    border: 2px solid #118dbe;
+    padding: 3px;
+    margin: 1rem auto;
+}
+
+.Company_title_right{
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background: #fff;
+    vertical-align: middle;
+    margin: -2px  0 0 4px;
+
+}
+
+@media screen and (max-width: 320px) {
+    .Company_title {font-size: 0.8rem;color: #fff;    margin: 5px auto 0px auto;}
+    .p-txt {margin: 10px auto;    font-size: 0.6rem;}
+    .sy-title {width: 60%;}
+    .dl-cont dl dd {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+    .dl-cont dl dt {height: 6rem;width: 66%;;}
+    .Company_introduction .content-txt {
+    font-size: 0.6rem;
+    padding: 0 14px;
+    text-indent: 24px;
+    margin-bottom: 3px;
+    line-height: 1rem;
+}
+.hd-cont-txt p {white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;}
+      .fot-txt {
+    display: inline-block;
+    margin-top: 2rem;
+}
+.title {
+    margin-top: 2rem;
+}
+.tel {
+    display: block;
+    width: 33%;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    background: #2c94be;
+    padding: 0.3rem 0;
+    border-radius: 16px;
+}
+.hd-cont-txt h4 {
+    margin: 1px 0;
+}
+.Company-title{
+    background: #4186b2;
+    width: 6rem;
+    margin-top: -1.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.hd-cont-txt p:nth-child(7){
+    display: none;
+}
+.hd-cont-txt p:nth-child(8){
+    display: none;
+}
+.hd-cont-txt p:nth-child(9){
+    display: none;
+}
+
+.sh-table {
+    border: 1px solid #118dbe;
+    width: 90%;
+    margin: 6px auto 6px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.lis-txt {
+    font-size: 0.6rem;
+}
+.Company_cont h4 {
+    font-size: 1rem;
+
+}
+.Company_cont p {
+    font-size: 0.8rem;
+}
+.Company_cont h4 {
+    font-size: 1rem;
+    text-indent: 28px;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+.contBox {
+    position: relative;
+    background: #00000069;
+    top: 50%;
+    padding: 31px 0;
+    margin-top: -42%;
+}
+}
+
+
+
+

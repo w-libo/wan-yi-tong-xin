@@ -300,7 +300,7 @@ html, body, .swiper-container, .swiper-slide {
     height: 4rem;
     line-height: 4rem;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .scont_title{
     font-size: 1.2rem;
@@ -442,7 +442,7 @@ html, body, .swiper-container, .swiper-slide {
 .tel{
     display: block;
     width: 33%;
-    margin: 5rem auto;
+    margin: 2rem auto;
     text-align: center;
     font-size: 1rem;
     text-decoration: none;
@@ -641,7 +641,7 @@ html, body, .swiper-container, .swiper-slide {
 .s-ing{
     display: block;
     width: 93%;
-    margin: -26px auto 0 4%;
+    margin: 0px auto 0 4%;
     height: 12rem;
 }
 

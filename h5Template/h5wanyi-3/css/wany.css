@@ -297,8 +297,8 @@ html, body, .swiper-container, .swiper-slide {
     background: #4186b2;
     width: 6rem;
     margin-top: -1.5rem;
-    height: 3.5rem;
-    line-height: 3.5rem;
+    height: 4rem;
+    line-height: 4rem;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -352,6 +352,7 @@ html, body, .swiper-container, .swiper-slide {
     text-align: center;
     margin-bottom: 0.5rem;
     line-height: 3.5rem;
+    overflow: hidden;
 }
 .cont-p li img{
     width: 65%;

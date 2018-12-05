@@ -15,7 +15,7 @@ html, body, .swiper-container, .swiper-slide {
     background: #00000069;
     top: 50%;
     padding: 31px 0;
-    margin-top: -35%;
+    margin-top: -38%;
 }
 /*下滑箭头样式*/
 .u-arrow {
@@ -283,15 +283,15 @@ html, body, .swiper-container, .swiper-slide {
 /*公司介绍*/
 
 .Company_introduction{
-    width: 85%;
+    width: 92%;
     height: auto;
-    margin: 12% auto 0 auto;
+    margin: 5% auto 0 auto;
     background: url(../images/wanyi8.png) no-repeat;
     background-size: 100% 100%;
     padding-top: 1.5rem;
     padding-bottom: 0.3rem;
     color: #fff;
-    height: 78%;
+    height: 90%;
 }
 .Company-title{
     background: #4186b2;
@@ -461,7 +461,7 @@ html, body, .swiper-container, .swiper-slide {
 }
 .sy-title{
     color: #118dbe;
-    width: 52%;
+    width: 100%;
     text-align: center;
     margin: 10px auto;
 }
@@ -637,6 +637,12 @@ html, body, .swiper-container, .swiper-slide {
     margin: -2px  0 0 4px;
 
 }
+.s-ing{
+    display: block;
+    width: 93%;
+    margin: -26px auto 0 4%;
+    height: 12rem;
+}
 
 @media screen and (max-width: 320px) {
     .Company_title {font-size: 0.8rem;color: #fff;    margin: 5px auto 0px auto;}
@@ -727,6 +733,16 @@ html, body, .swiper-container, .swiper-slide {
     padding: 31px 0;
     margin-top: -42%;
 }
+}
+@media screen and (max-width: 370px) and (min-width: 320px) {
+
+.Company_title {margin: 20px auto 20px auto;}
+.Company_cont h4 {font-size: 1.2rem;margin-top: 1rem;}
+.Company_cont p {font-size: 0.8rem;}
+.Company-title {margin-bottom: 16px;}
+.Company_introduction .content-txt {margin-bottom: 8px;line-height: 1.2rem;}
+.dl-cont dl dt {height: 6rem;width: 76%;}
+.s-ing {display: block;width: 93%;margin: 0px auto 0 4%;height: 12rem;}
 }
 
 

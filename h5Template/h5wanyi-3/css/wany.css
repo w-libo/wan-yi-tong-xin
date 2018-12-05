@@ -381,8 +381,8 @@ html, body, .swiper-container, .swiper-slide {
     background: #118dbe;
 }
  .order {
-    height: 30px;
-    line-height: 30px;
+    height: 26px;
+    line-height: 26px;
     text-align: center;
 }
  .order .line {
@@ -498,7 +498,7 @@ html, body, .swiper-container, .swiper-slide {
 .sh-table{
     border: 1px solid #118dbe;
     width: 90%;
-    margin: 10px auto 10px auto;
+    margin: 10px auto 0px auto;
     border-collapse:collapse;
     text-align: center;
 }

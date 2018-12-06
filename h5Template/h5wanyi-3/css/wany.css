@@ -345,7 +345,7 @@ html, body, .swiper-container, .swiper-slide {
 .cont-p li{
     display: inline-block;
     list-style: none;
-    width: 48.8%;
+    width: 49%;
     height: 5rem;
     background: #fff;
     vertical-align: middle;
@@ -362,7 +362,8 @@ html, body, .swiper-container, .swiper-slide {
     text-align: center;
 }
 .sff img{
-    width: 86%;
+    width: 93%;
+    height: 12rem;
 }
 .bot-txt{
     font-size: 1.2rem;
@@ -394,7 +395,7 @@ html, body, .swiper-container, .swiper-slide {
     border-radius: 20px;
     height: 30px;
     line-height: 30px;
-    margin: 50px auto 20px auto;
+    margin: 35px auto 20px auto;
     background: #118dbe;
 }
 
@@ -434,6 +435,7 @@ html, body, .swiper-container, .swiper-slide {
     line-height: 1.2rem;
 }
 .hd-cont-txt h4{
+    margin: 4px 0;
 }
 .hd-cont-txt p{
     font-size: 0.8rem;

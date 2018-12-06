@@ -15,7 +15,7 @@ html, body, .swiper-container, .swiper-slide {
     background: #00000069;
     top: 50%;
     padding: 31px 0;
-    margin-top: -46%;
+    margin-top: -52%;
 }
 /*下滑箭头样式*/
 .u-arrow {
@@ -187,11 +187,12 @@ html, body, .swiper-container, .swiper-slide {
 
 /*公司logo*/
 .wanyi_logo{
-    width: 5rem;
+    width: 7rem;
     position: relative;
     z-index: 3;
     margin: 0 auto;
     animation: fadeIn 2s ease 1s 1 normal both running;
+    margin-bottom: 1rem;
 }
 .wanyi_logo img{
     width: 100%;
@@ -316,7 +317,6 @@ html, body, .swiper-container, .swiper-slide {
 .sais-txt{
     font-size: 0.9rem;
     padding: 0 24px;
-    text-indent: 24px;
     margin-bottom: 10px;
     line-height: 1.5rem;
 }
@@ -324,9 +324,9 @@ html, body, .swiper-container, .swiper-slide {
     margin-top: 1rem;
 }
 .Company_introduction .content-txt{
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0 24px;
-    text-indent: 24px;
+    text-indent: 30px;
     margin-bottom: 10px;
     line-height: 1.5rem;
 }
@@ -357,8 +357,38 @@ html, body, .swiper-container, .swiper-slide {
 .cont-p li img{
     width: 65%;
 }
+.sff{
+    width: 100%;
+    text-align: center;
+}
+.sff img{
+    width: 94%;
+    height: 12rem;
+}
+.bot-txt{
+    font-size: 1.2rem;
+    width: 86%;
+    margin-left: 6%;
+    text-align: center;
+    color: #f33305;
+    margin-top: 1rem;
+}
+.dsgf{
+    text-indent: 30px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 1rem;
+}
+.img-tp{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 .Company_title{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
     width: 87%;
     text-align: center;
@@ -521,12 +551,28 @@ html, body, .swiper-container, .swiper-slide {
     color: #fff;
     font-size: 0.9rem;
 }
-.Company_cont p{
-    text-indent: 28px;
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
+.zbf_cont{
+    width: 86%;
+    margin: 2rem auto 0 auto;
+}
+.sing-txt{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.sing-txt .sing-txt-gs{
+    float: left;
+    font-size: 1rem;
+}
+.sing-txt .sing-txt-lis{
+    font-size: 1rem;
     color: #118dbe;
-    text-align: center;
+    float: left;
+    display: block;
+    max-width: 70%;
+}
+.sing-txt .max-w{
+    max-width: 55%;
 }
 .Company_cont h4 {
     font-size: 1.4rem;
@@ -652,9 +698,9 @@ html, body, .swiper-container, .swiper-slide {
     .p-txt {margin: 10px auto;    font-size: 0.6rem;}
     .sy-title {width: 60%;}
     .dl-cont dl dd {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
-    .dl-cont dl dt {height: 7rem;width: 66%;;}
+    .dl-cont dl dt {height: 6rem;width: 66%;;}
     .Company_introduction .content-txt {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     padding: 0 14px;
     text-indent: 24px;
     margin-bottom: 3px;
@@ -737,15 +783,23 @@ html, body, .swiper-container, .swiper-slide {
     margin-top: -42%;
 }
 }
-@media screen and (max-width: 370px) and (min-width: 320px) {
+@media screen and (max-width: 375px) {
 
-.Company_title {margin: 20px auto 20px auto;}
+.Company_title {margin: 20px auto 20px auto;font-size: 0.8rem}
 .Company_cont h4 {font-size: 1.2rem;margin-top: 1rem;}
 .Company_cont p {font-size: 0.8rem;}
 .Company-title {margin-bottom: 16px;}
 .Company_introduction .content-txt {margin-bottom: 8px;line-height: 1.2rem;}
 .dl-cont dl dt {height: 6.5rem;width: 76%;}
-.s-ing {display: block;width: 93%;margin: 0px auto 0 4%;height: 12rem;}
+.s-ing {display: block;width: 93%;margin: 0px auto 0 4%;height: 10rem;}
+.sais-txt {font-size: 0.8rem;margin-bottom: 5px;line-height: 1rem;}
+.zbf_cont {font-size: 0.8rem;}
+.sing-txt .sing-txt-lis {font-size: 0.8rem;}
+.sing-txt .sing-txt-gs {float: left;font-size: 0.8rem;}
+.sff img {
+    width: 94%;
+    height: 8rem;
+}
 }
 
 

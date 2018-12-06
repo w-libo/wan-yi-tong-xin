@@ -345,7 +345,7 @@ html, body, .swiper-container, .swiper-slide {
 .cont-p li{
     display: inline-block;
     list-style: none;
-    width: 49%;
+    width: 48.8%;
     height: 5rem;
     background: #fff;
     vertical-align: middle;
@@ -362,8 +362,7 @@ html, body, .swiper-container, .swiper-slide {
     text-align: center;
 }
 .sff img{
-    width: 93%;
-    height: 12rem;
+    width: 86%;
 }
 .bot-txt{
     font-size: 1.2rem;
@@ -435,7 +434,6 @@ html, body, .swiper-container, .swiper-slide {
     line-height: 1.2rem;
 }
 .hd-cont-txt h4{
-    margin: 4px 0;
 }
 .hd-cont-txt p{
     font-size: 0.8rem;

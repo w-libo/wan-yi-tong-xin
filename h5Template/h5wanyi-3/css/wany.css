@@ -362,8 +362,9 @@ html, body, .swiper-container, .swiper-slide {
     text-align: center;
 }
 .sff img{
-    width: 93%;
-    height: 12rem;
+    width: 90%;
+    height: 10rem;
+    margin: 0.3rem 0;
 }
 .bot-txt{
     font-size: 1.2rem;
@@ -383,7 +384,7 @@ html, body, .swiper-container, .swiper-slide {
     margin-top: 1rem;
 }
 .img-tp{
-    width: 88%;
+    width: 76%;
     display: block;
     margin: 0 auto;
 }
@@ -786,20 +787,25 @@ html, body, .swiper-container, .swiper-slide {
 }
 @media screen and (max-width: 375px) {
 
-.Company_title {margin: 20px auto 20px auto;font-size: 0.8rem}
+.Company_title {margin: 0px auto 10px auto;font-size: 0.8rem}
 .Company_cont h4 {font-size: 1.2rem;margin-top: 1rem;}
 .Company_cont p {font-size: 0.8rem;}
 .Company-title {margin-bottom: 16px;}
-.Company_introduction .content-txt {margin-bottom: 8px;line-height: 1.2rem;}
+.Company_introduction .content-txt {margin-bottom: 0px;line-height: 1rem;}
 .dl-cont dl dt {height: 6.5rem;width: 76%;}
 .s-ing {display: block;width: 93%;margin: 0px auto 0 4%;height: 10rem;}
 .sais-txt {font-size: 0.8rem;margin-bottom: 5px;line-height: 1rem;}
-.zbf_cont {font-size: 0.8rem;margin: 1rem auto 0 auto;}
+.zbf_cont {font-size: 0.8rem;margin: 0.7rem auto 0 auto;}
 .sing-txt .sing-txt-lis {font-size: 0.8rem;}
 .sing-txt .sing-txt-gs {float: left;font-size: 0.8rem;}
 .sff img {
     width: 94%;
     height: 8rem;
+}
+.img-tp {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
 }
 }
 

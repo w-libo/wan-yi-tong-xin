@@ -414,15 +414,16 @@ html, body, .swiper-container, .swiper-slide {
     height: 26px;
     line-height: 26px;
     text-align: center;
+    margin: 0.5rem 0;
 }
  .order .line {
    display: inline-block;
    width: 14%;
-   border-top: 1px solid #118dbe ;
+   border-top: 1px solid #ca2801;
    vertical-align: middle;
 }
 .order .txt {
-       color: #118dbe;
+    color: #e12e03;
     vertical-align: middle;
     font-size: 1.2rem;
     font-weight: 600;
@@ -500,7 +501,7 @@ html, body, .swiper-container, .swiper-slide {
 }
 .dl-cont dl dt{
     display: block;
-    height: 7rem;
+    height: 8rem;
     width: 78%;
     overflow: hidden;
     margin-bottom: 10px;

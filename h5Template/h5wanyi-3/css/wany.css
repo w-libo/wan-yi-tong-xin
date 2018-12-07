@@ -793,7 +793,7 @@ html, body, .swiper-container, .swiper-slide {
 .dl-cont dl dt {height: 6.5rem;width: 76%;}
 .s-ing {display: block;width: 93%;margin: 0px auto 0 4%;height: 10rem;}
 .sais-txt {font-size: 0.8rem;margin-bottom: 5px;line-height: 1rem;}
-.zbf_cont {font-size: 0.8rem;}
+.zbf_cont {font-size: 0.8rem;margin: 1rem auto 0 auto;}
 .sing-txt .sing-txt-lis {font-size: 0.8rem;}
 .sing-txt .sing-txt-gs {float: left;font-size: 0.8rem;}
 .sff img {
